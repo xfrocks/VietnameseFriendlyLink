@@ -14,6 +14,7 @@ class VietnameseFriendlyLink_Listener
 			'u' => array('ù','ú','ụ','ủ','ũ','ư','ừ','ứ','ự','ử','ữ'),
 			'y' => array('ỳ','ý','ỵ','ỷ','ỹ'),
 			'd' => array('đ'),
+			'' => array('̉','̣','̃','̀','́'),
 		);
 
 		static $mapUpper = array(
@@ -24,6 +25,7 @@ class VietnameseFriendlyLink_Listener
 			'U' => array('Ù','Ú','Ụ','Ủ','Ũ','Ư','Ừ','Ứ','Ự','Ử','Ữ'),
 			'Y' => array('Ỳ','Ý','Ỵ','Ỷ','Ỹ'),
 			'D' => array('Đ'),
+			'' => array('̉','̣','̃','̀','́'),
 		);
 
 		foreach ($mapLower as $to => $fromMany)
