@@ -2,15 +2,16 @@
   "legacy_addon_id": "VietnameseFriendlyLink",
   "title": "Vietnamese Friendly Link",
   "description": "🇻🇳 URL tiếng Việt không dấu -> URL tieng Viet khong dau",
-  "version_id": 2000000,
-  "version_string": "2.0.0",
+  "version_id": 2000100,
+  "version_string": "2.0.1",
   "dev": "XFROCKS",
   "dev_url": "https://xfrocks.com",
   "faq_url": "https://github.com/xfrocks/VietnameseFriendlyLink/wiki",
   "support_url": "https://github.com/xfrocks/VietnameseFriendlyLink/issues",
   "extra_urls": {
-    "github.com": "https://github.com/xfrocks/VietnameseFriendlyLink"
+    "GitHub": "https://github.com/xfrocks/VietnameseFriendlyLink",
+    "Icon source": "https://en.wikipedia.org/wiki/Flag_of_Vietnam"
   },
   "require": [],
-  "icon": ""
+  "icon": "icon.png"
 }
