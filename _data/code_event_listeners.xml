@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<code_event_listeners>
+  <listener event_id="router_public_setup" execute_order="10" callback_class="Xfrocks\VietnameseFriendlyLink\Listener" callback_method="routerPublicSetup" active="1" description="Setup Vietnamese accents."/>
+</code_event_listeners>
