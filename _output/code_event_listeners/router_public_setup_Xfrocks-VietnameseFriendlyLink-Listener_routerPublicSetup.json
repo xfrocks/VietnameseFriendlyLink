@@ -1,0 +1,9 @@
+{
+    "event_id": "router_public_setup",
+    "execute_order": 10,
+    "callback_class": "Xfrocks\\VietnameseFriendlyLink\\Listener",
+    "callback_method": "routerPublicSetup",
+    "active": true,
+    "hint": "",
+    "description": "Setup Vietnamese accents."
+}

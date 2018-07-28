@@ -1,0 +1,12 @@
+{
+    ".gitignore": [
+        "/_build/",
+        "/_data/",
+        "/_releases/",
+        "/vendor/"
+    ],
+    "DevHelper\\Cli\\Command\\AutoGen": {
+        "time": 1532746389,
+        "version_id": 2000000
+    }
+}
