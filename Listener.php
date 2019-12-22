@@ -2,30 +2,45 @@
 
 namespace Xfrocks\VietnameseFriendlyLink;
 
+use XF\App;
 use XF\Container;
 use XF\Mvc\Router;
 
 class Listener
 {
     /**
-     * @param Container $container
-     * @param Router $router
-     * @see \XF\Mvc\Router::prepareStringForUrl()
+     * @param App $app
+     * @return void
      * @see utf8_deaccent
      * @see utf8_romanize
      */
-    public static function routerPublicSetup($container, &$router)
+    public static function appSetup($app)
     {
         if (!self::$doneIt) {
             self::doIt();
             self::$doneIt = true;
         }
+    }
 
+    /**
+     * @param Container $container
+     * @param Router $router
+     * @return void
+     * @see \XF\Mvc\Router::prepareStringForUrl()
+     */
+    public static function routerPublicSetup($container, &$router)
+    {
         $router->setRomanizeUrls(true);
     }
 
+    /**
+     * @var bool
+     */
     private static $doneIt = false;
 
+    /**
+     * @return void
+     */
     private static function doIt()
     {
         global $UTF8_LOWER_ACCENTS, $UTF8_UPPER_ACCENTS, $UTF8_ROMANIZATION;
